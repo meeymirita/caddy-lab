@@ -1,6 +1,6 @@
 # Caddy Lab — Edge, веб-сервер и reverse proxy с автоматическим HTTPS
 
-![Caddy](https://meeymirita-files.storage.yandexcloud.net/caddy/caddy-server.png)
+![Caddy](https://raw.githubusercontent.com/meeymirita/works-lab/main/images/caddy.png)
 
 **Статус: ✅ методичка вычитана построчно и проверена запуском 05.10.2026 (31 находка исправлена): сессии 1–6 и 9–11 — локально на Caddy v2.11.7, сессии 7, 8, 12 и шаг 13.5 — в Docker. Не запускались: systemd-служба (13.1), кластер (13.4), Laravel за Caddy (8.3), публичный домен и Let's Encrypt (4.4, 13.2) — в тексте помечены «сверьтесь». Прохождение — впереди.**
 **Сложность: средняя.** Инфраструктурная лаба про один конкретный инструмент — Caddy 2, от первого запуска до сборки своих модулей на Go.
