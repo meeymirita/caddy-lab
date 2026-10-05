@@ -40,3 +40,4 @@ Caddy 2 (Caddyfile + JSON-конфиг), Docker Compose, PHP-FPM через Fast
 ---
 
 Часть сборного репозитория лабораторных работ — [anitech-performance](https://github.com/meeymirita/anitech-performance).
+
