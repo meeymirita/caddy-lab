@@ -1,3 +1,44 @@
+{
+#	admin off
+	auto_https off
+}
+
 :8080 {
-	respond "v2122"
+	root * site
+	encode zstd gzip
+
+	redir   /old  /about.html 301
+	rewrite /team /about.html
+
+	header {
+		?Cache-Control "public, max-age=300"
+		X-Content-Type-Options nosniff
+		-Server
+	}
+
+	handle_errors {
+		@404 expression {err.status_code} == 404
+		handle @404 {
+			rewrite * /404.html
+			file_server
+		}
+		@500 expression {err.status_code} == 500
+		handle @500 {
+			rewrite * /500.html
+			file_server
+		}
+	}
+	handle /test-500 {
+		error 500
+	}
+
+	@assets path /assets/*
+	header @assets Cache-Control "public, max-age=31536000, immutable"
+
+	file_server
+}
+:8083 {
+	root * site
+	try_files {path} /index.html
+	file_server
 }
