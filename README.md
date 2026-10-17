@@ -17,7 +17,7 @@ Caddy 2 (Caddyfile + JSON-конфиг), Docker Compose, PHP-FPM через Fast
 
 Методичка [`caddy.html`](caddy.html) ([открыть на сайте](https://anitech.meeymirita.ru/works/caddy.html)) — открывается в браузере, прогресс по чекбоксам сохраняется локально.
 
-## Что внутри (13 сессий, ~48 ч)
+## Что внутри (13 сессий, ~57 ч)
 
 **Теория** (9 разделов): азбука HTTP/DNS/TLS и что такое reverse proxy, что такое Caddy, как он устроен (ядро, модули, JSON, адаптеры), автоматический HTTPS, структура Caddyfile, как Caddy обрабатывает запрос, reverse proxy внутри, стенд проекта Edge, как идти по лабе.
 
